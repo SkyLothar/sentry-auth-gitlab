@@ -1,0 +1,7 @@
+*.pyc
+*.egg-info/
+*.eggs
+/dist
+/build
+.cache
+.ropeproject
