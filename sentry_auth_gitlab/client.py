@@ -14,10 +14,7 @@ class GitLabApiError(Exception):
 
 
 class GitLabClient(object):
-    def __init__(self, client_id, client_secret):
-        self.client_id = client_id
-        self.client_secret = client_secret
-        self.http = http.build_session()
+    http = http.build_session()
 
     def _request(self, path, access_token):
         headers = {'Authorization': 'Bearer {0}'.format(access_token)}
