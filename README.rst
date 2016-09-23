@@ -8,7 +8,7 @@ Install
 
 ::
 
-    pip install https://github.com/skylothar/sentry-auth-gitlab/archive/master.zip
+    pip install sentry-auth-gitlab
 
 Setup
 -----
