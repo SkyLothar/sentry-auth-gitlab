@@ -1,5 +1,6 @@
 GitLab Auth for Sentry
 ======================
+v0.0.2
 
 An SSO provider for Sentry which enables GitLab Login
 
