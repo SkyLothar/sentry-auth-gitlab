@@ -13,4 +13,4 @@ ACCESS_TOKEN_URL = '{0}://{1}/oauth/token'.format(SCHEME, BASE_DOMAIN)
 AUTHORIZE_URL = '{0}://{1}/oauth/authorize'.format(SCHEME, BASE_DOMAIN)
 API_BASE_URL = '{0}://{1}/api/v{2}'.format(SCHEME, BASE_DOMAIN, API_VERSION)
 
-SCOPE = 'read_user'
+SCOPE = 'api'
