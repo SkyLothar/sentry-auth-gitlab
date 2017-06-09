@@ -1,8 +1,21 @@
 GitLab Auth for Sentry
 ======================
-v0.0.2
+v0.1.0
 
 An SSO provider for Sentry which enables GitLab Login
+
+Changes made for Gitlab 9.x
+----------
+Following configuration has been changed
+
+.. code-block:: python
+
+  # You can specify scope to "api" in Gitlab's OAuth Application page
+  # If you failed to do that, set GITLAB_AUTH_SCOPE = "read_user"
+  GITLAB_AUTH_SCOPE = "api"
+  # If your gitlab does not support v4 api, set GITLAB_API_VERSION = 3
+  GITLAB_API_VERSION = 4
+
 
 Install
 -------
@@ -31,11 +44,12 @@ Once done, grab your API keys and drop them in your ``sentry.conf.py:
     GITLAB_BASE_DOMAIN = "git.example.com"
 
 
-Optionally you may also specify the api version and scheme:
+Optionally you may also specify the api version, scheme, and scope:
 
 .. code-block:: python
 
-    GITLAB_API_VERSION = 3
+    GITLAB_API_VERSION = 4
+    GITLAB_AUTH_SCOPE = "api"
     GITLAB_HTTP_SCHEME = "https"
 
 
